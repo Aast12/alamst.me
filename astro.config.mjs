@@ -23,6 +23,10 @@ export default defineConfig({
 		mdx(),
 		icon()
 	],
+	i18n: {
+		defaultLocale: "en",
+		locales: ["es", "en"],
+	},
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
 		rehypePlugins: [

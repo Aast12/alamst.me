@@ -31,6 +31,47 @@ const post = defineCollection({
 			tags: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
 			ogImage: z.string().optional()
 		})
-})
+});
 
-export const collections = { post }
+const workExperience = defineCollection({
+	type: 'content',
+	schema: ({ }) =>
+		z.object({
+			company: z.string().max(60),
+			role: z.string().max(160),
+			location: z.string().max(60),
+			startDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val)),
+			endDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val))
+				.optional(),
+			relevantDomains: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+			skills: z.array(z.string()).default([]).transform(removeDupsAndLowerCase),
+		})
+});
+
+const education = defineCollection({
+	type: 'content',
+	schema: ({ }) =>
+		z.object({
+			school: z.string().max(60),
+			degree: z.string().max(160),
+			location: z.string().max(60),
+			startDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val)),
+			endDate: z
+				.string()
+				.or(z.date())
+				.transform((val) => new Date(val))
+				.optional(),
+			grade: z.number().optional(),
+		})
+});
+
+export const collections = { post, workExperience, education }

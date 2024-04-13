@@ -59,8 +59,12 @@ const config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans],
-				satoshi: ['Satoshi', 'sans'],
+				// sans: [...fontFamily.sans],
+				// satoshi: ['Satoshi', 'sans'],
+				// nanum: ['Nanum Gothic', 'sans'],
+				// playfair: ["Playfair Display", 'serif'],
+				body: ['Nanum Gothic', 'sans'],
+				display: ["Playfair Display", 'serif'],
 			}
 		}
 	}
