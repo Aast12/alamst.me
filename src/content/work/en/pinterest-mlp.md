@@ -9,5 +9,5 @@ relevantDomains: ["all", "swe", "data", "infra"]
 ---
 
 - Worked with ML Data Platform, contributing to an internal offline dataset storage service.
-- Broadened the user base for a **Spark-based feature storage**. Built an alternate in-memory API to load and commit data for pandas DataFrames, removing the overhead tied to using Spark (for appropriate cases, e.g. low volume datasets).
-- Improved dependency tracking for stored feature datasets by designing and implementing a component to infer dependencies from Spark RDDs metadata stored within the team's internal service.
+- Broadened the user base for a Big Data feature storage service by enabling use cases with low volumes of data. Provided an alternate (non-Spark) interface to load and commit data for pandas DataFrames.
+- Designed and built a system to improve the service's dependency tracking for stored datasets by leveraging Spark RDDs metadata to infer dependencies.

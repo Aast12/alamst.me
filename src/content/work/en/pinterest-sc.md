@@ -8,5 +8,5 @@ skills: ["Python", "Docker", "Flask", "TiDB", "MySQL"]
 relevantDomains: ["all", "swe", "data"]
 ---
 
-- Designed and developed, along with the Storage & Caching team, a **microservice (Python/Flask)** to automate backup and restore operations for a new storage service to be built on top of **TiDB**.
-- Implemented a service to trigger backup & restore operations on demand, and track the corresponding backups metadata.
+- Designed and developed a **microservice (Python/Flask)** to automate backup and restore operations for a new storage service to be built on top of **TiDB**.
+- Implemented a service to trigger backup & restore operations on demand, and track the corresponding backups' metadata.

@@ -17,8 +17,8 @@ import type { CollectionEntry } from 'astro:content'
 const languages = ['Spanish', 'English']
 const programmingLanguages = ['C++', 'Rust', 'Python', 'JavaScript', 'TypeScript', 'Scala']
 const web = ['HTML/CSS/JS', 'React', 'TailwindCSS', 'FastAPI', 'Flask']
-const data = ['Postgres', 'Pandas', 'Spark', 'Machine Learning', 'Geopandas']
-const misc = ['AWS', 'Docker', 'Git', 'Agile', 'Numerics']
+const data = ['Jax', 'PyTorch', 'Postgres', 'Pandas', 'Spark', 'Machine Learning', 'Geopandas']
+const misc = ['AWS (Sagemaker, S3, CloudWatch)', 'Docker', 'Git', 'Agile', 'Numerics']
 
 const MAX_POSTS = 10
 const allPosts = await getAllPosts()
@@ -72,7 +72,7 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 	}
 </style>
 <PageLayout meta={{ title: 'Home' }}>
-  <div class='flex w-full flex-col gap-y-10'>
+	<div class='flex w-full flex-col gap-y-10'>
 		<section class='flex flex-col items-center gap-y-7'>
 			<Image
 				src={astro}
@@ -84,7 +84,7 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 			<div class='flex flex-col items-center gap-y-4'>
 				<h1 class='font-display text-3xl font-bold'>{author}</h1>
 				<div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-					<Label title='zero44' as='a' href='http://zero44.eu/' target='_blank'>
+					<Label title='KTH' as='a' href='http://kth.se/' target='_blank'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -92,7 +92,7 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 							></path></svg
 						>
 					</Label>
-              <Label title='Stockholm, Sweden'>
+					<Label title='Stockholm, Sweden'>
 						<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='h-5 w-5' slot='icon'
 							><path
 								fill='currentColor'
@@ -112,7 +112,7 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 							></path></svg
 						>
 					</Label>
-          <Label title='Aast12' as='a' href='https://github.com/Aast12/' target='_blank'>
+					<Label title='Aast12' as='a' href='https://github.com/Aast12/' target='_blank'>
 						<svg viewBox='0 0 98 96' class='h-5 w-5' slot='icon'
 							><path
 								fill-rule='evenodd'
@@ -127,21 +127,23 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 
 		<Section title='About'>
 			<p>
-        Hello, I'm Andrés, a master's student in Scientific Computing and Computational Mathematics at
-        TU Berlin (1st year) and KTH (2nd and current year). I'm passionate about complex problems in 
-        science and engineering, and how we can exploit computing resources to solve them.
-      </p>
-			<p>
-				I have experience in software engineering, data analysis, machine learning, and
-        currently broadening my knowledge in numerical methods, mathematical modelling, and high-performance computing.
+				Hello, I'm Andrés, a master's student in Scientific Computing and Computational Mathematics
+				at TU Berlin and KTH. I'm passionate about complex social, urban, and environmntal problems,
+				and how we can approach them through computing and mathematical modelling.
 			</p>
-      <div class="border border-border px-5 py-3 bg-amber-100 rounded-lg border-amber-500 text-amber-950">
-        I'm <b>currently looking for</b> thesis opportunities starting January 2025, or full-time positions 
-        after graduating in June 2025. I'm interested in the analysis and modelling of urban and/or social 
-        systems, as well as the development of tools for processing and visualizing complex and large datasets
-        within such domains.
-      </div>
-
+			<p>
+				I have experience in software engineering, data analysis, machine learning, and currently
+				broadening my knowledge in numerical methods, mathematical modelling, and high-performance
+				computing.
+			</p>
+			<div
+				class='rounded-lg border border-amber-500 border-border bg-amber-100 px-5 py-3 text-amber-950'
+			>
+				I'm <b>currently looking for</b> full-time positions in industry or academia after graduating
+				in July 2025. I'm interested in the analysis and modelling of urban and/or social systems, as
+				well as the development of tools for processing and visualizing complex and large datasets within
+				such domains.
+			</div>
 		</Section>
 
 		<Section title='Experience'>
@@ -178,15 +180,15 @@ function buildDateRange(startDate: string | Date, endDate: string | Date | undef
 
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
-				Coming soon
-				<!-- <ProjectCard
-					href='https://www.google.com'
-					heading='Consectetur'
-					subheading='Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+				<ProjectCard
+					href='https://github.com/Aast12/xray-invert'
+					heading='X-ray Transmision Map reconstruction'
+					subheading='Masters thesis'
 					imagePath='/src/assets/coming-soon.png'
 					altText='Example'
 					class='w-full sm:w-1/2'
 				/>
+				<!-- 
 				<ProjectCard
 					as='div'
 					heading='Coming soon...'

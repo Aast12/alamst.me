@@ -8,6 +8,6 @@ skills: ["Python", "Docker", "GeoPandas"]
 relevantDomains: ["all", "swe", "datascience"]
 ---
 
-- Worked with State of Mexico's Secretary of Finance to consolidate a trustworthy database of existing estates in the region.
-- Experimented with different methods to **standardize and visualize geographical data (GeoPandas)** to identify duplicate entries and support further efforts to interpolate missing addresses.
-- Analyzed geographical data from iterations of our efforts to highlight progress from previous iterations and identify any anomalies in the data.
+- Worked with State of Mexico's Secretary of Finance to consolidate a trustworthy database of existing estates in the region. 
+- Researched methods to **standardize geographical data** to identify duplicate entries and support further efforts to interpolate missing addresses.
+- Produced **geographical and quantitative visualizations** to quantify the estates per region and compare datasets of addresses.
