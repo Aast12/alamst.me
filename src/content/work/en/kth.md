@@ -1,5 +1,5 @@
 ---
-company: "KTH Bio-Opto-Nano Physcis - Hard X-ray Lab"
+company: "KTH Bio-Opto-Nano Physics - Hard X-ray Lab"
 role: "Master's Thesis"
 location: "Stockholm, Sweden"
 startDate: "1 January 2025"

@@ -19,5 +19,5 @@ relevantDomains:
 -  Built a monitoring system on top of AWS Cloudwatch to **detect data anomalies** and/or errors in external data.
 -  Developed a framework to generate reports from SQL queries and matching a spreadsheet template.
 -  Designed and built the first internal pipeline for **continuous deployment and experimentation of ML models** for fuel consumption prediction in voyages.
--  Developed a ** lustering algorithm** to compute default values for existing ML models in cases of entities missing feature datapoints.
+-  Developed a **clustering algorithm** to compute default values for existing ML models in cases of entities missing feature datapoints.
 
